@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Майстерня "Грицаєнка"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        .form-section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: hsl(42, 100%, 64%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff7c09;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Майстерня "Грицаєнка"</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ласкаво просимо до нашої Майстерні!</h2>
+            <p>Ми надаємо професійні послуги з ремонту техніки, вивезення непрацюючих пристроїв та прийому старої техніки для утилізації. Оберіть послугу, яка вас цікавить:</p>
+            <ul>
+                <li><a href="repair.html"><i class="fa-solid fa-wrench"></i>Ремонт техніки</a></li>
+                <li><a href="pickup.html"><i class="fa-solid fa-truck"></i>Вивіз техніки</a></li>
+                <li><a href="recycling.html"><i class="fa-solid fa-tv"></i>Прийом старої техніки</a></li>
+            </ul>
+        </section>
+
+        <section class="form-section">
+            <h2>Заповніть форму для замовлення послуги</h2>
+            <form>
+                <label for="full-name">Ваше ім'я:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Введіть ваше ім'я" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="service">Оберіть послугу:</label>
+                <select id="service" name="service" required>
+                    <option value="repair">Ремонт техніки</option>
+                    <option value="pickup">Вивіз техніки</option>
+                    <option value="recycling">Прийом старої техніки</option>
+                </select>
+
+                <label for="comments">Додаткові коментарі:</label>
+                <textarea id="comments" name="comments" placeholder="Опишіть ваші побажання або додаткову інформацію" rows="5"></textarea>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Наші переваги</h2>
+            <ul>
+                <li>Швидкий та якісний ремонт</li>
+                <li>Безкоштовний вивіз техніки</li>
+                <li>Екологічно безпечна утилізація</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами за телефоном: (044) 123-45-67 або відвідайте наш офіс за адресою: вул. Технічна, 10, Київ.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Майстерня "Грицаєнка". Всі права захищені.</p>
+    </footer>
+</body>
+</html>
